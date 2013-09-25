@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+	<repo priority="50" quality="experimental" status="unofficial">
+		<name>2realities</name>
+		<description>Overlay of Artem Sidorenko</description>
+		<homepage>http://www.2realities.com/</homepage>
+		<owner>
+			<email>artem@2realities.com</email>
+			<name>Artem Sidorenko</name>
+		</owner>
+		<source type="git">git@github.com:artem-sidorenko/portage-2realities.git</source>
+	</repo>
+</repositories>
