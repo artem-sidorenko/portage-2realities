@@ -1,0 +1,11 @@
+diff -ur evolution-rss-0.2.5.org/src/Makefile.am evolution-rss-0.2.5/src/Makefile.am
+--- evolution-rss-0.2.5.org/src/Makefile.am	2011-05-07 09:11:48.000000000 +0200
++++ evolution-rss-0.2.5/src/Makefile.am	2012-02-03 17:16:36.113840937 +0100
+@@ -129,7 +129,6 @@
+ if GCONF_SCHEMAS_INSTALL
+ 
+ install-data-local:
+-	rm -f $(PLUGIN_INSTALL_DIR)/*gnome-cooly*
+ 	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(schema_DATA)
+ 
+ uninstall-local:
