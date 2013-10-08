@@ -109,7 +109,7 @@ dspam_setup_storage_drivers() {
 
 	if use mysql; then
 		DSPAM_DRIVERS+=",mysql_drv"
-		DSPAM_DRIVERS_EXTRAS+="--with-mysql-includes=/usr/include/mysql --with-mysql-libraries=/usr/lib/mysql"
+		DSPAM_DRIVERS_EXTRAS+="--with-mysql-includes=$(mysql_config --variable=pkgincludedir) --with-mysql-libraries=$(mysql_config --variable=pkglibdir)"
 	fi
 
 	if use postgres; then
