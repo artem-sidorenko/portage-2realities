@@ -1,0 +1,4 @@
+You need to configure managesieve connection in
+${MY_INSTALLDIR}/roundcube/plugins/config.inc.php
+to get this plugin working.
+
