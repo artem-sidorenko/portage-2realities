@@ -1,0 +1,11 @@
+--- Makefile.org	2014-02-25 19:47:23.685365188 +0100
++++ Makefile	2014-02-25 19:47:31.578368348 +0100
+@@ -50,7 +50,7 @@
+ 
+ %.so: %.c
+ 	${APXS} ${LIBAPPARMOR_FLAGS} -c $< ${LDLIBS}
+-	mv .libs/$@ .
++#	mv .libs/$@ .
+ 
+ .PHONY: install
+ install: ${TARGET} ${MANPAGES}
