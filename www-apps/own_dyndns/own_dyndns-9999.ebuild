@@ -48,5 +48,5 @@ src_install() {
 pkg_postinst() {
 	elog "Install and upgrade instructions can be found here:"
 	elog "  https://github.com/artem-sidorenko/own_dyndns/blob/master/README.md"
-#	webapp_pkg_postinst
+	webapp_pkg_postinst
 }
