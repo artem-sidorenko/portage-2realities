@@ -29,9 +29,3 @@ src_install() {
 	dopammod pam_apparmor.so
 	dodoc README
 }
-
-#pkg_postinst(){
-#	apache-module_pkg_postinst
-#	elog "For configuration information see:"
-#	elog "	http://wiki.apparmor.net/index.php/Mod_apparmor"
-#}
