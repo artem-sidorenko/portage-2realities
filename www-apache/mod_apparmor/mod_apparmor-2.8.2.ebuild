@@ -16,6 +16,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
+DEPEND="~sys-libs/libapparmor-${PV}"
+RDEPEND="${DEPEND}"
+
 APACHE2_MOD_CONF="70_${PN}"
 APACHE2_MOD_DEFINE="APPARMOR"
 
