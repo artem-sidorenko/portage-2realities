@@ -20,6 +20,9 @@ FIRMWARE_FILENAME="am335x-pm-firmware.bin"
 FIRMWARE_URI="http://arago-project.org/git/projects/?p=am33x-cm3.git;a=blob_plain;f=bin/am335x-pm-firmware.bin;hb=HEAD -> ${FIRMWARE_FILENAME}"
 SRC_URI="${KERNEL_URI} ${FIRMWARE_URI} ${GENPATCHES_URI} ${ARCH_URI}"
 
+DEPEND="dev-embedded/u-boot-tools ${DEPEND}"
+RDEPEND="${DEPEND}"
+
 inherit git-2 versionator
 inherit versionator
 EGIT_REPO_URI="https://github.com/beagleboard/kernel.git"
