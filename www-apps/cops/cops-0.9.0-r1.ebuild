@@ -30,6 +30,5 @@ src_install() {
 	rm README.md COPYING README CHANGELOG
 	doins -r *
 
-	webapp_configfile "${MY_HTDOCSDIR}/config.php"
 	webapp_src_install
 }
