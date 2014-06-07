@@ -24,6 +24,8 @@ ruby_add_bdepend "test? ( =dev-ruby/rspec-2.14* )"
 ruby_add_rdepend "
 	>=dev-ruby/colored-1.2
 	=dev-ruby/cri-2.5*
+	>=dev-ruby/systemu-2.5.2
+	<dev-ruby/systemu-2.6.0
 	>=dev-ruby/log4r-1.1.10
 	dev-ruby/json"
 
