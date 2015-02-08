@@ -31,9 +31,9 @@ RDEPEND=">=sys-devel/gcc-4.5"
 
 src_unpack(){
         kernel-2_src_unpack
-        epatch "${FILESDIR}/apparmor/3.12.8"/"0001-UBUNTU-SAUCE-AppArmor-basic-networking-rules.patch"
-        epatch "${FILESDIR}/apparmor/3.12.8"/"0002-apparmor-Fix-quieting-of-audit-messages-for-network-.patch"
-        epatch "${FILESDIR}/apparmor/3.12.8"/"0003-UBUNTU-SAUCE-apparmor-Add-the-ability-to-mediate-mou.patch"
+        epatch "${FILESDIR}/apparmor/3.14.31"/"0001-UBUNTU-SAUCE-AppArmor-basic-networking-rules.patch"
+        epatch "${FILESDIR}/apparmor/3.14.31"/"0002-apparmor-Fix-quieting-of-audit-messages-for-network-.patch"
+        epatch "${FILESDIR}/apparmor/3.14.31"/"0003-UBUNTU-SAUCE-apparmor-Add-the-ability-to-mediate-mou.patch"
 }
 
 pkg_postinst() {
