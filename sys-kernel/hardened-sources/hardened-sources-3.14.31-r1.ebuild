@@ -1,12 +1,12 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.13.2-r1.ebuild,v 1.1 2014/02/09 22:49:46 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.14.31-r1.ebuild,v 1.1 2015/02/07 12:56:43 blueness Exp $
 
 EAPI="5"
 
 ETYPE="sources"
 K_WANT_GENPATCHES="base"
-K_GENPATCHES_VER="10"
+K_GENPATCHES_VER="36"
 K_DEBLOB_AVAILABLE="1"
 
 inherit kernel-2
@@ -25,15 +25,15 @@ DESCRIPTION="Hardened kernel sources (kernel series ${KV_MAJOR}.${KV_MINOR})"
 HOMEPAGE="http://www.gentoo.org/proj/en/hardened/"
 IUSE="deblob"
 
-KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc x86"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86"
 
 RDEPEND=">=sys-devel/gcc-4.5"
 
 src_unpack(){
-	kernel-2_src_unpack
-	epatch "${FILESDIR}/apparmor/3.14.31"/"0001-UBUNTU-SAUCE-AppArmor-basic-networking-rules.patch"
-	epatch "${FILESDIR}/apparmor/3.14.31"/"0002-apparmor-Fix-quieting-of-audit-messages-for-network-.patch"
-	epatch "${FILESDIR}/apparmor/3.14.31"/"0003-UBUNTU-SAUCE-apparmor-Add-the-ability-to-mediate-mou.patch"
+        kernel-2_src_unpack
+        epatch "${FILESDIR}/apparmor/3.14.31"/"0001-UBUNTU-SAUCE-AppArmor-basic-networking-rules.patch"
+        epatch "${FILESDIR}/apparmor/3.14.31"/"0002-apparmor-Fix-quieting-of-audit-messages-for-network-.patch"
+        epatch "${FILESDIR}/apparmor/3.14.31"/"0003-UBUNTU-SAUCE-apparmor-Add-the-ability-to-mediate-mou.patch"
 }
 
 pkg_postinst() {
